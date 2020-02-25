@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+    Developped by : Martin Vibert,
+    Date: 20/09/2019,
+    Name of project: Xeloria
+-->
+
+<head>
+    <title>Contact Form</title>
+    <!--Meta-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content='Xeloria - Serveur minecraft bedrock édition' name='description'>
+    <meta content='xeloria, serveur mcpe, faction, xeloria, xeloria, boutique xeloria' name='keywords'>
+
+    <!--INTERNAL url-->
+    <link href="css/contact.css" rel="stylesheet">
+    <!-- style css-->
+    <link rel="icon" type="image/png" href="image/Logo/logo.png">
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="image/logo_xeloria.jpg">
+    <link rel="shortcut icon" type="image/png" href="image/logo_xeloria.jpg">
+
+    <!--EXTERNAL url-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!--Bootstrap.min.css-->
+</head>
+
+<body>
+    <!--Form-->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+
+                <h1 id="title-form">Formulaire de contact</h1>
+
+                <p class="lead">Merci de preciser vos informations personnelles qui resteront privees</p>
+
+
+                <form id="contact-form" method="post" action="php/contact.php">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Prenom *</label><!--Name-->
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Entrer votre prenom *"><p id="paragraph_prenom"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Nom *</label><!--Surname-->
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Entrer vos nom *"><p id="paragraph_nom"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">E-mail *</label><!--Email-->
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Entrer votre email *"><p id="paragraph_email"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Votre besoin *</label><!--Need-->
+                                    <select id="form_need" name="need" class="form-control">
+                                        <option value="Selectionnez">Selectionnez</option>
+                                        <option value="Probleme">Probleme sur le serveur</option>
+                                        <option value="CV">Rejoindre l'equipe</option>
+                                        <option value="Suggestion">Suggestion</option>
+                                        <option value="Other">Autre besoin</option>
+                                    </select>
+                                    <p id="paragraph_besoin"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label><!--Message-->
+                                    <p name="body"></p>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Votre message*" rows="4"></textarea><p id="paragraph_message"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message" id="formulaire" onclick="return control()"><!--Function Controll()-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> Merci de rester respectueux dans votre message.<br />
+                                    <strong>*</strong> Si votre demande affiche une erreur vérifier votre connexion.
+                                    <br />
+                                    <strong>*</strong> 
+                                    Pour tout autre probleme, merci de nous contacter via Discord ou E-mail.</p>                            
+
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+    </div>
+    <!-- /.container-->
+    <script src="js/contact.js"></script><!--Contact application-->
+    
+</body>
+
+</html>
