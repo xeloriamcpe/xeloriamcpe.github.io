@@ -44,7 +44,7 @@
 /*Background*/
  #overlay-background-one {
     /*one background*/
-     background-image: url("../image/background_xeloria.jpg");
+     background-image: url("background_xeloria.jpg");
      background-attachment: fixed;
      background-size: 1349px 851.556px;
      background-position: 50% -174.197px;
@@ -52,7 +52,7 @@
 
  #overlay-background-two {
     /*two background*/
-     background-image: url("../image/background_vote.jpg");
+     background-image: url("background_vote.jpg");
      background-attachment: fixed;
      background-size: 1349px 1500px;
      background-position: 50% -174.197px;
